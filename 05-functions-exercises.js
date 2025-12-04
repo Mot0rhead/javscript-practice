@@ -6,11 +6,37 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=14146
 // NOTA: Explora diferentes sintaxis de funciones para resolver los ejercicios
 
 // 1. Crea una función que reciba dos números y devuelva su suma
-
+ function sum(a,b){
+    return a+b
+}
+console.log(sum(2,2))
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
-
+let arrayNumeros=[1,8,3,4]
+ function numeroMayor(arrayNumeros){
+    let mayor =0
+    for(let i =0 ; i <= arrayNumeros.length-1 ; i++){
+        if(arrayNumeros[i]>mayor){
+            mayor = arrayNumeros[i]
+        }
+    }
+    return mayor
+}
+let result = numeroMayor(arrayNumeros)
+console.log(result)
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
-
+let cadenaTexto="turyioemcaaa"
+let vocales = ['a', 'e', 'i', 'o', 'u']
+ function contadorVocales(String){
+    let numeroVocales = 0
+    for(let i =0 ; i <= String.length-1 ; i++){
+        if(vocales.includes(String[i])){
+            numeroVocales ++
+        }
+    }
+    return numeroVocales
+}
+ result = contadorVocales(cadenaTexto)
+console.log(result)
 // 4. Crea una función que reciba un array de strings y devuelva un nuevo array con las strings en mayúsculas
 
 // 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario
